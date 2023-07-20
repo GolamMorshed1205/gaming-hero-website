@@ -1,0 +1,797 @@
+/* work-sans font from google font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Shared Styles */
+
+.primary-btn {
+    border-radius: 48px;
+    background: #FF42A5;
+    padding: 21px 40px;
+    border: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+}
+
+/* Header Styles*/
+
+nav {
+    background: #FFF;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 80px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #0B0223;
+}
+
+.nav-title span {
+    color: #FF42A5;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-content {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3C354F;
+}
+
+.nav-social-content {
+    color: #3C354F;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    padding: 0px 10px;
+}
+
+.nav-social-text {
+    color: #3C354F;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-social-img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 5px;
+    margin-top: 5px;
+}
+
+/* Banner styles */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+
+.banner-content {
+    width: 50%;
+    background-image: url("../images/Group\ 14.png");
+    background-size: 100%;
+    padding: 100px 40px 0px 100px;
+
+}
+
+.banner-text-content {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0B0223;
+
+}
+
+.banner-title-content {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: -30px 0px 0px;
+
+}
+
+.icon {
+    width: 20px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.secondary-btn {
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 21px 40px;
+    border: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-img img {
+    height: 500px;
+    width: 100%;
+}
+
+
+/* Featured Section Styles */
+
+.featured {
+    display: flex;
+}
+
+.featured-image-content {
+    width: 90%;
+}
+
+.featured-content {
+    width: 50%;
+    text-align: end;
+    padding: 0px 80px 20px;
+}
+
+.featured-title {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featured-details-content {
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Online Games section styles */
+
+.online-games-section {
+    margin-bottom: 50px;
+    background-color: #FFF;
+}
+
+.online-video-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.online-games-section-title {
+    text-align: center;
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.online-games-section-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-games-section-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.video {
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.video:hover {
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+    text-transform: uppercase;
+}
+
+/*Play Instant Section */
+
+.play-instant {
+    display: flex;
+    background-color: #FFF;
+    padding-bottom: 100px;
+}
+
+.play-instant-content {
+    padding: 180px 100px;
+    text-align: center;
+}
+
+.play-instant-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.play-instant-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-instant-img {
+    height: 500px;
+    margin: 40px 40px 20px 0px;
+}
+
+.play-instant-img-small {
+    position: relative;
+    width: 150px;
+    margin-top: -300px;
+    margin-left: -60px;
+    border: none;
+}
+
+/* Play online Section Styles */
+
+.play-online {
+    display: flex;
+    background-color: #FFF;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.play-online-img {
+    height: 400px;
+}
+
+.play-online-img-small {
+    position: relative;
+    width: 150px;
+    margin-top: -140px;
+    margin-left: 350px;
+    border: none;
+}
+
+.play-online-content {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.play-online-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.play-online-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Career styles */
+
+.Career {
+    display: flex;
+    background-color: #FF42A5;
+    margin-top: 50px;
+}
+
+.Career-content {
+    width: 50%;
+    text-align: center;
+    padding: 0px 10px 10px 80px;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.Career-content-title {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.Career-content-column {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Career-content-column1 {
+    text-align: start;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Career-content-column2 {
+    text-align: end;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Career-btn {
+    margin-top: 20px;
+    border-radius: 48px;
+    background: #FFF;
+    padding: 21px 40px;
+    gap: 10px;
+    color: #FF42A5;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.Career-img {
+    width: 600px;
+    background-image: url(../images/Group\ 15.png);
+}
+
+/* category Styles */
+
+.category {
+    background: rgba(255, 66, 165, 0.03);
+}
+
+.category-content {
+    padding: 80px 100px 80px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 40px;
+
+}
+
+.game-category {
+    border-radius: 50px;
+    background: #fff;
+    display: flex;
+    gap: 10px;
+    padding: 5px 30px 5px 10px;
+    font-size: small;
+    text-align: center;
+    cursor: pointer;
+}
+
+.game-category:hover {
+    color: #F948B2;
+    background-color: #4EC5F7;
+}
+
+/* Footer Styles */
+
+.footer {
+    background: #0B0223;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-logo span {
+    color: #FF42A5;
+
+}
+
+.logo {
+    height: 40px;
+    width: 60px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 2rem;
+
+}
+
+.footer-useful-link {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #FFF;
+}
+
+.footer-useful-link li {
+    list-style: none;
+}
+
+div li a {
+    text-decoration: none;
+    color: #3C354F;
+}
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.copyright {
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        width: 500px;
+        margin-left: 20px;
+    }
+
+    .nav-content {
+        padding-left: 0px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .nav-menu-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .nav-social-content {
+        margin-right: -10px;
+        margin-bottom: 10px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-img {
+        width: 400px;
+        margin-left: 80px;
+    }
+
+    .banner-content {
+        width: 400px;
+        background-size: 100%;
+        padding: 10px 20px 10px 80px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        padding: 0px 20px 10px 40px;
+        margin-left: 0px;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    .featured-image-content {
+        width: 400px;
+        margin-left: 80px;
+    }
+
+    .featured-content {
+        text-align: center;
+        margin-top: -40px;
+        width: 400px;
+
+    }
+
+    .online-games-section {
+        width: 400px;
+        margin-left: 80px;
+    }
+
+    .online-video-content {
+        flex-direction: column;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .video {
+        width: 300px;
+    }
+
+    .play-instant {
+        flex-direction: column;
+        padding-bottom: 1px;
+        width: 400px;
+        margin-left: 80px;
+    }
+
+    .play-instant-content {
+        padding: 20px 25px 0px 25px;
+        text-align: center;
+    }
+
+    .play-instant-img {
+        width: 300px;
+        height: 200px;
+        padding: 0px 10px 0px 20px;
+        margin-top: 10px;
+    }
+
+    .play-instant-img-small {
+        width: 80px;
+        position: relative;
+        margin: -100px 100px 0px 10px;
+    }
+
+    .play-online {
+        flex-direction: column-reverse;
+        width: 400px;
+        margin-left: 80px;
+        padding: 0px 1px 0px 1px;
+    }
+
+    .play-online-content {
+        padding: 0px 1px 0px 1px;
+    }
+
+    .play-online-img {
+        height: 300px;
+        margin-left: 30px;
+    }
+
+    .play-online-img-small {
+        width: 80px;
+        position: relative;
+        margin: -100px 10px 0px 250px;
+    }
+
+    .Career {
+        margin-top: 60px;
+        flex-direction: column;
+        width: 400px;
+        margin-left: 80px;
+        padding: 10px 10px;
+    }
+
+    .Career-content {
+        width: 400px;
+        padding: 5px 5px 5px 0px;
+    }
+
+    .Career-content-column1 {
+        font-size: 0.8rem;
+    }
+
+    .Career-content-column2 {
+        font-size: 0.8rem;
+    }
+
+    .Career-img {
+        width: 400px;
+        padding-left: 15px;
+    }
+
+    .category-content {
+        flex-direction: row;
+        width: 400px;
+        margin-left: 80px;
+        padding: 10px 0px 40px 0px;
+    }
+
+    .footer {
+        margin-top: -10px;
+        width: 500px;
+        margin-left: 20px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .footer-useful-link {
+        flex-wrap: wrap;
+        padding: 5px 5px;
+    }
+
+    .copyright {
+        font-size: small;
+    }
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+    nav{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .nav-content {
+        gap: 1px;
+    }
+    .nav-menu-content {
+        gap: 10px;
+    }
+    
+    .featured {
+        flex-direction: column;
+    }
+
+    .featured-image-content {
+        width: 600px;
+        margin-left: 80px;
+
+    }
+    .btn {
+        display: flex;
+    }
+
+    .featured-content {
+        text-align: center;
+        margin-top: -40px;
+        width: 600px;
+
+    }
+
+    .online-games-section {
+        width: 600px;
+        margin-left: 80px;
+    }
+
+    .online-video-content {
+        width: 600px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .video {
+        width: 200px;
+    }
+
+    .play-instant {
+        flex-direction: column;
+        padding-bottom: 1px;
+        width: 600px;
+        margin-left: 90px;
+    }
+
+    .play-instant-content {
+        padding: 20px 25px 0px 25px;
+        text-align: center;
+    }
+
+    .play-instant-img {
+        width: 500px;
+        height: 300px;
+        padding: 0px 10px 0px 20px;
+        margin-top: 10px;
+    }
+
+    .play-instant-img-small {
+        width: 80px;
+        position: relative;
+        margin: -100px 100px 0px 10px;
+    }
+
+    .play-online {
+        flex-direction: column-reverse;
+        width: 600px;
+        margin-left: 80px;
+        padding: 0px 1px 0px 1px;
+    }
+
+    .play-online-content {
+        padding: 0px 1px 0px 1px;
+    }
+
+    .play-online-img {
+        height: 300px;
+        width: 500px;
+        margin-left: 40px;
+    }
+
+    .play-online-img-small {
+        width: 80px;
+        position: relative;
+        margin: -100px 10px 0px 250px;
+    }
+
+    .Career {
+        display: none;
+    
+    }
+
+    .category-content {
+        flex-direction: row;
+        width: 700px;
+        padding: 10px 0px 40px 30px;
+    }
+
+    .footer {
+        margin-top: -10px;
+        width: 700px;
+        margin-left: 30px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .footer-useful-link {
+        flex-wrap: wrap;
+        padding: 5px 5px;
+    }
+
+    .copyright {
+        font-size: small;
+    }
+
+}
